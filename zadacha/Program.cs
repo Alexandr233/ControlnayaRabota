@@ -1,6 +1,6 @@
 ﻿string[] array = AskArray();
-string[] result = InputMass(array, 3);
-Console.WriteLine($"[{string.Join(", ", array)}] -> [{string.Join(", ", result)}]");
+string[] result = InputMass(array, 3); //Тут можно изменить колличество символов вместо 3 написать 5,6 и так далее)
+Console.WriteLine($"[{string.Join(", ", array)}] -> [{string.Join(", ", result)}]"); //проставляет запятые между значениями и ставит пробелы при выводе результирующего массива
 
 string[] InputMass(string[] input, int m) 
 {
@@ -34,6 +34,6 @@ int IneqSymbols(string[] input, int m)
 }
 string[] AskArray() 
 {
-    Console.Write("Введите значения через пробел: ");
+    Console.Write("Введите значения через пробел: "); // при вводе с клавиатуры
     return Console.ReadLine().Split(" ");
 }
