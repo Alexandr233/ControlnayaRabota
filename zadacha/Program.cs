@@ -35,5 +35,5 @@ int IneqSymbols(string[] input, int m)
 string[] AskArray() 
 {
     Console.Write("Введите значения через пробел: "); // при вводе с клавиатуры
-    return Console.ReadLine().Split(" ");
+    return (Console.ReadLine()?? "").Split(" ");
 }
